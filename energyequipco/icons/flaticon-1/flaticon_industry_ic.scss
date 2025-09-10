@@ -1,0 +1,85 @@
+$flaticon_industry_ic-font: "flaticon_industry_ic";
+
+@font-face {
+    font-family: $flaticon_industry_ic-font;
+    src: url("./flaticon_industry_ic.woff2?83cd3e38d2dacbb915c9427fe3640856") format("woff2"),
+url("./flaticon_industry_ic.woff?83cd3e38d2dacbb915c9427fe3640856") format("woff"),
+url("./flaticon_industry_ic.eot?83cd3e38d2dacbb915c9427fe3640856#iefix") format("embedded-opentype"),
+url("./flaticon_industry_ic.ttf?83cd3e38d2dacbb915c9427fe3640856") format("truetype"),
+url("./flaticon_industry_ic.svg?83cd3e38d2dacbb915c9427fe3640856#flaticon_industry_ic") format("svg");
+}
+
+i[class^="flaticon-ic-"]:before, i[class*=" flaticon-ic-"]:before {
+    font-family: flaticon_industry_ic !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_industry_ic-map: (
+    "location": "\f101",
+    "mail": "\f102",
+    "phone-call": "\f103",
+    "close": "\f104",
+    "checked": "\f105",
+    "right-arrow": "\f106",
+    "left-arrow": "\f107",
+    "play": "\f108",
+    "search": "\f109",
+    "plus": "\f10a",
+    "shopping-cart": "\f10b",
+    "customer-support": "\f10c",
+    "customer-service": "\f10d",
+    "review": "\f10e",
+    "construction-worker": "\f10f",
+);
+
+.flaticon-ic-location:before {
+    content: map-get($flaticon_industry_ic-map, "location");
+}
+.flaticon-ic-mail:before {
+    content: map-get($flaticon_industry_ic-map, "mail");
+}
+.flaticon-ic-phone-call:before {
+    content: map-get($flaticon_industry_ic-map, "phone-call");
+}
+.flaticon-ic-close:before {
+    content: map-get($flaticon_industry_ic-map, "close");
+}
+.flaticon-ic-checked:before {
+    content: map-get($flaticon_industry_ic-map, "checked");
+}
+.flaticon-ic-right-arrow:before {
+    content: map-get($flaticon_industry_ic-map, "right-arrow");
+}
+.flaticon-ic-left-arrow:before {
+    content: map-get($flaticon_industry_ic-map, "left-arrow");
+}
+.flaticon-ic-play:before {
+    content: map-get($flaticon_industry_ic-map, "play");
+}
+.flaticon-ic-search:before {
+    content: map-get($flaticon_industry_ic-map, "search");
+}
+.flaticon-ic-plus:before {
+    content: map-get($flaticon_industry_ic-map, "plus");
+}
+.flaticon-ic-shopping-cart:before {
+    content: map-get($flaticon_industry_ic-map, "shopping-cart");
+}
+.flaticon-ic-customer-support:before {
+    content: map-get($flaticon_industry_ic-map, "customer-support");
+}
+.flaticon-ic-customer-service:before {
+    content: map-get($flaticon_industry_ic-map, "customer-service");
+}
+.flaticon-ic-review:before {
+    content: map-get($flaticon_industry_ic-map, "review");
+}
+.flaticon-ic-construction-worker:before {
+    content: map-get($flaticon_industry_ic-map, "construction-worker");
+}

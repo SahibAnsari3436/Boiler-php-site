@@ -1,0 +1,17 @@
+.map-iframe{
+	iframe{
+		height:500px;	
+	}
+}
+.contact-area{
+	padding: 80px 40px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    margin-top: -200px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+	@include respond('phone'){
+		padding: 40px 15px;
+	}
+}

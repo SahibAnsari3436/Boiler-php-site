@@ -1,0 +1,317 @@
+/* Silder Tow */
+.silder-three{
+	position: relative;
+	background: var(--secondary);
+	
+	.swiper-slide{
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		
+		&:after{
+			content: "";
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			left: 0;
+			opacity: 0.5;
+			background: url(../images/main-slider/slider3/pattren.png);
+			background-position: left bottom;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+	}
+	.overlay-slide{
+		height: 100vh;
+		min-height: 700px;
+		width: 50vw;
+		float: left;
+		
+		@include respond('phone'){
+			margin-bottom: 7rem;
+		}
+		@include respond('tab-port'){
+		    min-height: 600px;
+			height: 600px;
+		}
+		@include respond('phone-land'){
+			min-height: 100%;
+			height: 100%;
+			width: 100%;
+			margin: 30px 0 100px;
+		}
+		@include respond('phone'){
+			margin: 30px 0 80px;
+		}
+		img{
+			height:100%;
+			object-fit:cover;
+			width: 100%;
+			@include respond('phone-land'){
+				height:auto;
+			}
+		}
+	}
+	.inner-content {
+		position: relative;
+		z-index: 1;
+		
+		@include respond('phone-land'){
+			padding-top: 30px;
+		}
+		p{
+			font-size:24px;
+			margin-bottom:50px;
+			color:#fff;
+			
+			@include respond('tab-land'){
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+			@include respond('phone'){
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.silder-content{
+		.inner-text {
+			position: relative;
+			z-index: 9;
+			margin: 0 -30px 0 0;
+			
+			@include respond('tab-port'){
+				margin: 0;
+			}
+		}
+		.title{
+			margin-bottom: 20px;
+			font-size: 70px;
+			line-height: 1;
+			font-weight: 900;
+			white-space: nowrap;
+			color:#fff;
+			
+			@include respond('tab-land'){
+				font-size: 50px;
+			}
+			@include respond('phone'){
+				font-size: 32px;
+				line-height: 1.2;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.silder-img{
+		overflow:hidden;
+		height: calc(100vh - 80px);
+		
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.slider-three-pagination{
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		z-index: 1;
+		display: flex;
+		transform: translateX(-50%);
+		
+		@include respond('tab-port'){
+			left: 0;
+			transform: translate(0);
+		}
+		.btn-next,
+		.btn-prev{
+			background: #fff;
+			width: 86px;
+			height: 86px;
+			color: #000;
+			display: block;
+			text-align: center;
+			line-height: 86px;
+			font-size: 24px;
+			@include transitionMedium;
+			
+			@include respond('tab-port'){
+				width:70px;
+				height:70px;
+				line-height: 70px;
+			}
+			@include respond('phone'){
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+			}
+			i{
+				position:unset;	
+				color:inherit;
+				font-size: inherit;
+			}
+			&:active,
+			&:hover{
+				background:var(--primary-hover);
+				i{
+					color:#fff;
+				}	
+			}
+		}
+	}
+	
+
+}
+
+@keyframes shake2 {
+  0% { transform: translateY(-50%) rotate(0deg) scale(1.2); }
+  100% { transform: translateY(-50%) rotate(360deg) scale(1.2);  }
+}
+@-moz-keyframes shake2 {
+  0% { transform: translateY(-50%) rotate(0deg) scale(1.2); }
+  100% { transform: translateY(-50%) rotate(360deg) scale(1.2);  }
+}
+.portfolio-2{
+	position:relative;
+	z-index:1;
+	&:after {
+		//content: "";
+		background-image: url(../images/main-slider/bg-line-1.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 600px;
+		height: 600px;
+		z-index: -1;
+		pointer-events: none;
+	}
+}
+// Services
+.service-area{
+	position:relative;
+	z-index:1;
+	&:after{
+		content:"";
+		height:35%;
+		position:absolute;
+		bottom:0;
+		z-index:-1;
+		left:0;
+		width:100%;
+		background:#fff;
+		@include respond('tab-port'){
+			display: none;
+		}
+		@include respond('phone'){
+			height: 150px;
+		}
+	}
+	@include respond('tab-port'){
+	    padding-bottom: 20px;
+	}
+}
+
+.num-pagination{
+	&.style-1{
+		display: flex;
+		padding-top:40px;
+		justify-content: center;
+		width: 280px;
+		margin: auto;
+		.btn-prev,
+		.btn-next{
+			top:-15px;
+			i{
+				color:var(--secondary);
+			}
+		}
+	}
+}
+
+.testimonial3-pagination{
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		color: var(--primary);
+		transform: scale(1.7);
+		font-weight: 600;
+	}
+	.swiper-pagination-bullet{
+		height: auto;
+		opacity: 1;
+		width: auto;
+		color:var(--secondary);
+		font-weight: 500;
+		font-size: 15px;
+		-webkit-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		transition: all 0.5s;
+		border-radius: 0%;
+		margin: 0 15px;
+		background-color: transparent;
+	}
+}
+.swiper-pagination{
+	&.style-2{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: auto;
+		width: 240px;
+		display: flex;
+		align-items: center;
+		background: var(--secondary);
+		
+		.swiper-pagination-bullet{
+			height: auto;
+			opacity: 1;
+			padding:25px 15px; 
+			color:#fff;
+			width: auto;
+			-webkit-transition: all 0.5s;
+			-ms-transition: all 0.5s;
+			transition: all 0.5s;
+			border-radius: 0%;
+			margin: 0 15px;
+			background-color: transparent;
+			
+			&.swiper-pagination-bullet-active {
+				color: var(--primary);
+				font-weight: 600;
+					&:after{
+						display:none;
+					}
+			}
+			@include respond('phone'){
+				padding: 14px 5px; 
+			}
+		}
+		@include respond('phone'){
+			width: 180px;
+		}
+	}
+}
+
+
+
+
+.swiper-team-2{
+	margin-right:-10rem;
+	@include respond('tab-land'){
+		margin-right:0;
+	}
+}
+.new-page {
+    padding: 2px 5px;
+    font-size: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 10px;
+}

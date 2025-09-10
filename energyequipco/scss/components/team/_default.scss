@@ -1,0 +1,20 @@
+.ic-team{
+	transition: all 0.5s;
+	.ic-name{
+		a{
+			transition: all 0.5s;
+		}
+	}
+	.ic-content{
+		transition: all 0.5s;
+		position: relative;
+	}
+	.ic-media{
+		img{
+			width: 100%;
+		}
+	}
+	.ic-position{
+		display: block;
+	}
+}

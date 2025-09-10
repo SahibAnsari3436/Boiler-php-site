@@ -1,0 +1,117 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_industry";
+    src: url("./flaticon_industry.woff2?162d4314610feab55ec6f885e1183511") format("woff2"),
+url("./flaticon_industry.woff?162d4314610feab55ec6f885e1183511") format("woff"),
+url("./flaticon_industry.eot?162d4314610feab55ec6f885e1183511#iefix") format("embedded-opentype"),
+url("./flaticon_industry.ttf?162d4314610feab55ec6f885e1183511") format("truetype"),
+url("./flaticon_industry.svg?162d4314610feab55ec6f885e1183511#flaticon_industry") format("svg")
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before{
+    font-family: flaticon_industry !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-factory:before {
+    content: "\f101";
+}
+.flaticon-infrastructure:before {
+    content: "\f102";
+}
+.flaticon-industrial:before {
+    content: "\f103";
+}
+.flaticon-manufacturing:before {
+    content: "\f104";
+}
+.flaticon-factory-1:before {
+    content: "\f105";
+}
+.flaticon-manufacture:before {
+    content: "\f106";
+}
+.flaticon-manufacturing-1:before {
+    content: "\f107";
+}
+.flaticon-factory-2:before {
+    content: "\f108";
+}
+.flaticon-maintenance:before {
+    content: "\f109";
+}
+.flaticon-technology:before {
+    content: "\f10a";
+}
+.flaticon-prototype:before {
+    content: "\f10b";
+}
+.flaticon-worker:before {
+    content: "\f10c";
+}
+.flaticon-oil-industry:before {
+    content: "\f10d";
+}
+.flaticon-electric-factory:before {
+    content: "\f10e";
+}
+.flaticon-steel:before {
+    content: "\f10f";
+}
+.flaticon-services:before {
+    content: "\f110";
+}
+.flaticon-technology-1:before {
+    content: "\f111";
+}
+.flaticon-assembly:before {
+    content: "\f112";
+}
+.flaticon-green-energy:before {
+    content: "\f113";
+}
+.flaticon-chip:before {
+    content: "\f114";
+}
+.flaticon-solar-energy:before {
+    content: "\f115";
+}
+.flaticon-battery-charge:before {
+    content: "\f116";
+}
+.flaticon-renewable-energy:before {
+    content: "\f117";
+}
+.flaticon-customer-service:before {
+    content: "\f118";
+}
+.flaticon-customer-support:before {
+    content: "\f119";
+}
+.flaticon-technical-support:before {
+    content: "\f11a";
+}
+.flaticon-right-quote:before {
+    content: "\f11b";
+}
+.flaticon-quote:before {
+    content: "\f11c";
+}
+

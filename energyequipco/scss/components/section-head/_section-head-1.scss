@@ -1,0 +1,69 @@
+// Section Head
+.section-head{
+	&.style-1{
+		.sub-title{
+			letter-spacing: 4px;
+			position: relative;
+			padding-right: 95px;
+			display: inline-block;
+			margin-bottom: 5px;
+			@include respond('phone'){
+				padding-right: 30px;
+			}
+			&:after{
+				content: "";
+				height: 1px;
+				width: 85px;
+				background-color: var(--primary);
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+				@include respond('phone'){
+					width: 20px;
+				}
+			}
+			
+		}
+		h2.title{
+			font-size:45px;	
+			line-height:1.1;
+			@include respond('phone-land'){
+				font-size:35px;	
+				line-height:1.15;
+			}
+		}
+	}
+}
+.section-head {
+	&.style-2{
+		&.text-center{
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.sub-title{
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+		.title{
+			font-size: 45px;
+			font-weight: 700;
+			line-height: 1.2;
+			
+			@include respond('tab-land'){
+				font-size:40px;
+			}
+			@include respond('phone-land'){
+				font-size:32px;
+			}
+			@include respond('phone'){
+				font-size:28px;
+			}
+		}
+		p{
+			font-weight: 400;
+			font-size: 18px;
+		}
+	}
+}

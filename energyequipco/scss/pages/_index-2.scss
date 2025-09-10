@@ -1,0 +1,426 @@
+/* Silder Tow */
+.silder-two{
+	position: relative;
+	.side-image {
+		flex: 0 0 25%;
+		align-self: center;
+		position:relative;
+		z-index:1;
+		animation: icMove1 8s linear infinite;
+		
+		&:after{
+			content:"";
+			position:absolute;
+			left:-45px;
+			bottom:-45px;
+			width:100%;
+			height:100%;
+			background-image:url(../images/white-twill.png);
+			z-index:-1;
+			opacity:1;
+			@include respond('tab-land'){
+				left:-20px;
+				bottom:-20px;
+			}
+		}
+		@include respond('phone-land'){
+			display:none;
+		}
+	}
+	.swiper-slide{
+	    background: #fff;	
+		padding-bottom: 80px;
+		position: relative;
+		z-index: 1;
+		    overflow: hidden;
+		&:after {
+			content: "";
+			width: 22%;
+			height: 100%;
+			position: absolute;
+			background: var(--primary);
+			top: 0;
+			z-index: -1;
+			left: 0;
+			@include respond('phone-land'){
+				width: 50px;
+			}
+		}
+		@include respond('tab-land'){
+			padding-bottom: 50px;
+		}
+		@include respond('phone-land'){
+			padding-bottom: 0;
+		}
+	}
+	.overlay-slide {
+		height: calc(100vh - 160px);
+		width: 45%;
+		flex: 0 0 45%;
+		min-width: 45%;
+		border-radius: 0 0 0 100px;
+		min-height: 600px;
+		
+		@include respond('tab-land'){
+			height: calc(100vh - 130px);
+		}
+		@include respond('tab-port'){
+			flex: 0 0 35%;
+			max-width: 35%;
+			min-width: 35%;
+			min-height: 500px;
+		}
+		@include respond('phone-land'){
+			width: 100%;
+			flex: 0 0 100%;
+			min-width: 100%;
+			height: auto;
+			min-height: auto;
+		}
+		img{
+			height:100%;
+			object-fit:cover;
+			width: 100%;
+			@include respond('phone-land'){
+				height: auto;
+			}
+		}
+		&:after{
+			content:"";
+		}
+	}
+	.inner-content {
+		flex: 0 0 30%;
+		max-width: 30%;
+		min-width: 30%;
+		align-self: center;
+		position: relative;
+		padding-left: 40px;
+		z-index: 1;
+		@include respond('tab-land'){
+			padding-left: 30px;	
+		}
+		@include respond('tab-port'){
+			flex: 0 0 40%;
+			max-width: 40%;
+			min-width: 40%;
+		}
+		@include respond('phone-land'){
+			max-width:100%;	
+			flex:0 0 100%;	
+			min-width: 100%;
+			padding: 50px 30px;
+		}
+		@include respond('phone'){
+			padding: 40px 20px;
+		}
+		.inner-text{
+			width:620px;	
+			max-width:620px;	
+			@include respond('tab-land'){
+				width:400px;	
+				max-width:400px;	
+			}
+			@include respond('phone-land'){
+				width:100%;	
+				max-width:100%;	
+			}
+		}
+		
+		p{
+			font-size:18px;
+			margin-bottom:40px;
+			@include respond('tab-land'){
+				font-size:14px;
+			}
+		}
+		
+	}
+	.silder-content{
+		display: flex;
+		padding-left: 10%;
+		@include respond('phone-land'){
+			display: block;
+			padding-left: 50px;
+		}
+		.title-small{
+			margin-bottom: 20px;
+			font-size: 75px;
+			line-height: 1;
+			font-weight: 900;
+			white-space: nowrap;
+			animation: icMove1 10s linear infinite;
+			@include respond('tab-land'){
+				font-size: 50px;
+			}
+			@include respond('phone'){
+				font-size: 30px;
+				line-height: 1.2;
+			}
+		}
+	}
+	
+	.silder-img{
+		overflow:hidden;
+		height: calc(100vh - 80px);
+		
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	
+	.slider-one-pagination{
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		width: 80px;
+		overflow: hidden;
+		@include respond('tab-land'){
+			width: 50px;
+		}
+		.btn-next,
+		.btn-prev{
+			background: #252531;
+			width: 100%;
+			height: 80px;
+			color: #fff;
+			display: block;
+			text-align: center;
+			line-height: 80px;
+			font-size: 24px;
+			@include transitionMedium;
+			i{
+				position:unset;	
+				color:inherit;
+				font-size: inherit;
+			}
+			@include respond('tab-land'){
+				height: 50px;
+				line-height: 50px;
+				font-size: 18px;
+			}
+			&:hover{
+				background:var(--primary-hover);	
+			}
+		}
+	}
+	.swiper-pagination{
+		position: absolute;
+		left: 40px;
+		top: 50%;
+		bottom: auto;
+		right: auto;
+		width: auto;
+		transform: translate(-50%, -50%);
+		@include respond('phone-land'){
+			left: 25px;
+		}
+		.swiper-pagination-bullet{
+			height: 10px;
+			width: 10px;
+			background: #fff;
+			display: block;
+			margin: 30px auto;
+			position: relative;
+			@include transitionMedium;
+			cursor: pointer;
+			
+			&:after{
+				content: "";
+				width: 26px;
+				height: 26px;
+				border: 1px solid #fff;
+				display: block;
+				border-radius: 30px;
+				transform: translate(-50%, -50%) scale(0);
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				@include transitionMedium;
+			}
+			
+			&-active{
+				&:after{
+					transform: translate(-50%, -50%) scale(1);
+				}
+			}
+		}	
+	}
+}
+
+@keyframes shake2 {
+  0% { transform: translateY(-50%) rotate(0deg) scale(1.2); }
+  100% { transform: translateY(-50%) rotate(360deg) scale(1.2);  }
+}
+@-moz-keyframes shake2 {
+  0% { transform: translateY(-50%) rotate(0deg) scale(1.2); }
+  100% { transform: translateY(-50%) rotate(360deg) scale(1.2);  }
+}
+.portfolio-2{
+	position:relative;
+	z-index:1;
+	&:after {
+		//content: "";
+		background-image: url(../images/main-slider/bg-line-1.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 600px;
+		height: 600px;
+		z-index: -1;
+		pointer-events: none;
+	}
+}
+// Services
+.service-area{
+	position:relative;
+	z-index:1;
+	&:after{
+		content:"";
+		height:35%;
+		position:absolute;
+		bottom:0;
+		z-index:-1;
+		left:0;
+		width:100%;
+		background:#fff;
+		@include respond('tab-port'){
+			display: none;
+		}
+		@include respond('phone'){
+			height: 150px;
+		}
+	}
+	@include respond('tab-port'){
+	    padding-bottom: 20px;
+	}
+}
+
+
+
+
+.about-bx3{
+	.history-row{
+		display:flex;
+		align-items:center;
+		justify-content: space-between;
+		.year,
+		.awards,
+		.sales{
+			font-family: $font-family-title;
+			font-size:65px;
+			font-weight:700;
+			min-width: 120px;
+			letter-spacing: 8px;
+			border-bottom:4px solid var(--primary);
+			display: inline-block;
+			@include respond('phone'){
+				letter-spacing: 0;
+			}
+		}
+		.text{
+			display:block;
+			    font-size: 20px;
+			@include respond('phone-land'){
+				font-size: 18px;
+				line-height:1.2;
+			}
+		}
+	}
+	.ic-media{
+		height:100%;
+		overflow:visible;
+		padding-right: 15px;
+		z-index:1;
+		img{
+			height:100%;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: calc(50vw - 104px);
+			right: 80px;
+			z-index: -2;
+			background: #f8f8f8;
+			bottom: -120px;
+			background-image: url(../images/black-twill.png);
+			opacity: 0.2;
+		}
+		&.right{
+			padding-right: 0;
+			padding-left: 15px;
+			&:after{
+				left:80px;
+			}
+			.circle-bg{
+				left: auto;
+				right: -25%;
+			}
+		}
+		.circle-bg{
+			position:absolute;
+			height:400px;
+			z-index:-1;
+			width:400px;
+			bottom:-80px;
+			left: -25%;
+			 -webkit-animation: move1 10s ease-in infinite;
+			animation: move1 10s ease-in infinite;
+		}
+	}
+	@include respond ('tab-port'){
+		.ic-media{
+			padding-right:0;
+			&:after{
+				content:none;
+			}
+			.circle-bg{
+				display:none;
+			}
+			&.right{
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+		.history-row{
+			.year,
+			.awards,
+			.sales{
+				font-size:55px;
+			}
+		}
+	}
+	@include respond ('phone-land'){
+		.history-row{
+			.year,
+			.awards,
+			.sales{
+				font-size:38px;
+				min-width: 80px;
+			}
+		}
+	}
+}
+
+.resizemargin{
+	margin-left: calc((100% - 1230px) / 2);
+	
+	@include respond ('tab-land'){
+		margin-left: calc((100% - 1200px) / 2);
+	}
+	@media only screen and (max-width: 1191px){
+		margin-left: calc((100% - 960px) / 2);
+	}
+	@include respond ('tab-port'){
+		margin-left: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

@@ -1,0 +1,78 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_industry_ic";
+    src: url("./flaticon_industry_ic.woff2?83cd3e38d2dacbb915c9427fe3640856") format("woff2"),
+url("./flaticon_industry_ic.woff?83cd3e38d2dacbb915c9427fe3640856") format("woff"),
+url("./flaticon_industry_ic.eot?83cd3e38d2dacbb915c9427fe3640856#iefix") format("embedded-opentype"),
+url("./flaticon_industry_ic.ttf?83cd3e38d2dacbb915c9427fe3640856") format("truetype"),
+url("./flaticon_industry_ic.svg?83cd3e38d2dacbb915c9427fe3640856#flaticon_industry_ic") format("svg")
+}
+
+[class^="flaticon-ic-"]:before,
+[class*=" flaticon-ic-"]:before {
+    font-family: flaticon_industry_ic !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-ic-location:before {
+    content: "\f101";
+}
+.flaticon-ic-mail:before {
+    content: "\f102";
+}
+.flaticon-ic-phone-call:before {
+    content: "\f103";
+}
+.flaticon-ic-close:before {
+    content: "\f104";
+}
+.flaticon-ic-checked:before {
+    content: "\f105";
+}
+.flaticon-ic-right-arrow:before {
+    content: "\f106";
+}
+.flaticon-ic-left-arrow:before {
+    content: "\f107";
+}
+.flaticon-ic-play:before {
+    content: "\f108";
+}
+.flaticon-ic-search:before {
+    content: "\f109";
+}
+.flaticon-ic-plus:before {
+    content: "\f10a";
+}
+.flaticon-ic-shopping-cart:before {
+    content: "\f10b";
+}
+.flaticon-ic-customer-support:before {
+    content: "\f10c";
+}
+.flaticon-ic-customer-service:before {
+    content: "\f10d";
+}
+.flaticon-ic-review:before {
+    content: "\f10e";
+}
+.flaticon-ic-construction-worker:before {
+    content: "\f10f";
+}
+

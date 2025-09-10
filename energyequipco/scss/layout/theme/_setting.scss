@@ -1,0 +1,252 @@
+#bg {
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-bar-wraper.sticky-no{
+	.main-bar {
+		position: unset;
+	}
+}
+
+
+@media only screen and (min-width: 1281px){
+	.boxed{
+		.page-wraper {
+			max-width: 1200px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+		}
+		.tp-banner-container,
+		.rev_slider_wrapper {
+			left: 0 !important;
+			width: 100% !important;
+		}
+		.tp-rightarrow {
+			right: 0 !important;
+		}
+		.tp-leftarrow {
+			left: 0 !important;
+		}
+		.footer-fixed .site-footer {
+			left: 50%;
+			width: 1200px;
+			margin: 0 -600px;
+			
+		}
+		.is-fixed{
+			.main-bar {
+				left: 50%;
+				width: 1200px;
+				margin: 0 -600px;
+				transition: none;
+				-moz-transition: none;
+				-ms-transition: none;
+				-webkit-transition: none;
+				-o-transition: none;
+			}
+		}
+		
+		.resizemargin {
+			margin-left: calc((100% - 1200px) / 2);
+		}
+
+		// Theme Work
+		.ic-content-bx.style-3 .counter-info{
+			padding: 30px 30px 0px 30px;
+		}
+		
+		// site-header
+		.site-header{
+			&.style-1{
+				.extra-cell{
+					.login-btn{
+						i{
+							@include respond('wide-desktop-min'){	
+								margin:0;
+							}
+						}
+						@include respond('wide-desktop-min'){		
+							margin-left: 20px;
+							width: 45px;
+							height: 45px;
+							padding: 12px;
+							span{
+								display:none;
+							}
+						}
+					}
+				}
+				.phone-no{
+					@include respond('wide-desktop-min'){	
+						display:none;
+					}
+				}
+			}
+			.extra-nav{
+				@include respond('wide-desktop-min'){	
+					margin-left:15px;
+				}
+			}
+		}
+		.menu-btn{
+			margin-left: 15px;
+		}
+		.extra-icon-box{
+			display:none;
+		}
+		.silder-one{
+			.silder-content{
+				@include respond('wide-desktop-min'){
+					padding: 40px;
+				}
+				.title{
+					@include respond('wide-desktop-min'){
+						font-size: 120px;
+					}
+				}
+				.title-small{
+					@include respond('wide-desktop-min'){
+						font-size: 70px;
+					}
+				}
+			}
+		}
+		.container-fluid{
+			padding-left:15px;
+			padding-right:15px;
+		}
+		.under-construct{
+			@include respond('wide-desktop-min'){
+				padding:50px;
+			}
+			.ic-content{
+				.ic-title{
+					@include respond('wide-desktop-min'){
+						font-size:70px;
+					}
+				}
+				p{
+					@include respond('wide-desktop-min'){
+						font-size:28px;
+					}
+				}
+			}
+		}
+		
+		.about-bx4 .ic-media .img2 {
+			margin: 0 0 -61px 20px;
+		}
+		.silder-three .silder-content .inner-text {
+			margin: 0;
+		}
+		
+		.ic-coming-soon {
+			padding-left: 120px;
+			
+			.ic-coming-bx {
+				padding-left: 0px; 
+				padding-right: 0px; 
+			}
+			.ic-title {
+				font-size: 50px;
+			}
+			.countdown .date .time {
+				font-size: 70px;
+			}
+			
+		}
+		.ic-bnr-inr.style-1 h1{
+			font-size: 100px;
+		}
+		.about-bx2{
+			.year-exp{
+				.year{
+					font-size: 150px;
+				}
+				.text{
+					font-size: 35px;
+				}
+			}
+		}
+		.sidenav-menu {
+			position: absolute;
+		}
+		.under-construct{
+			padding: 50px;
+			
+			.ic-content{
+				.ic-title {
+					font-size: 50px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	
+	/* Frame */
+	.frame {
+		padding:30px;
+		.page-wraper {
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.is-fixed .main-bar {
+			position: relative;
+		}
+		.tp-banner-container,
+		.rev_slider_wrapper {
+			left: 0 !important;
+				width: 100% !important;
+		}
+		.tp-rightarrow {
+			right: 0 !important;
+		}
+		.tp-leftarrow {
+			left: 0 !important;
+		}
+		.is-fixed{
+			.main-bar {
+				left:0;
+				width: 100%;
+				margin: 0;
+			}
+			&.header-curve .logo-header:after {
+				right: auto;
+				left: -15px;
+				width: 90%;
+			}
+		}
+		button.scroltop{
+			right:50px;
+			bottom:50px;
+		}
+		.silder-three .silder-content .inner-text {
+			margin: 0;
+		}
+		.sidenav-menu {
+			position: absolute;
+			height: 100%;
+		}
+		.under-construct{
+			.ic-content .ic-title{
+				font-size: 75px;
+			}
+		}
+	}
+	
+}
+@media only screen and (max-width: 1281px) {
+	.frame {
+		padding: 0 !important;
+	}
+	.frame button.scroltop{
+		right:15px;
+		bottom:15px;
+	}
+}

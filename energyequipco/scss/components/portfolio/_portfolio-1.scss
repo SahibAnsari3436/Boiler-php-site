@@ -1,0 +1,229 @@
+.swiper-portfolio{
+    padding: 40px 0;
+    margin: -40px 0 -45px 0;
+	.ic-box.style-1{
+		@include respond('phone-land'){
+			margin-top: 0 !important;
+		}
+	}
+	
+}
+.ic-box{
+	&.style-1{
+		@include transitionMedium;
+		overflow: hidden;
+		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+		
+		.ic-media{
+			
+		}
+		.ic-info{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 30px;
+			background: rgba(33,37,41,0.2);
+		}
+		.sub-title{
+			font-family: var(--font-family-title);
+			writing-mode: tb-rl;
+			position: absolute;
+			bottom: 30px;
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: 3px;
+			margin: 0;
+			@include transitionMedium;
+		}
+		.title{
+			position:absolute;
+			padding-right:20%;
+			margin: 0;
+			@include transitionMedium;
+			a{
+				color:#fff;	
+			}
+		}
+		.view-btn{
+			width: 75px;
+			height: 75px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			@include translateZ;
+			transition: background 0.5s ease;
+			-moz-transition: background 0.5s ease;
+			-webkit-transition: background 0.5s ease;
+			-ms-transition: background 0.5s ease;
+			-o-transition: background 0.5s ease;
+			transition-delay: 0.5s;
+			-moz-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			-o-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			
+			&:after,	
+			&:before{
+				content:"";
+				position:absolute;
+				@include transitionMedium;
+				background:#fff;
+				opacity:0;
+			}	
+			&:after{
+				height:4px;
+				width:26px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-500px, 50%);
+				-moz-transform: translate(-500px, 50%);
+				-webkit-transform: translate(-500px, 50%);
+				-ms-transform: translate(-500px, 50%);
+				-o-transform: translate(-500px, 50%);
+			}	
+			&:before{
+				height:26px;
+				width:4px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -500px);
+				-moz-transform: translate(-50%, -500px);
+				-webkit-transform: translate(-50%, -500px);
+				-ms-transform: translate(-50%, -500px);
+				-o-transform: translate(-50%, -500px);
+			}
+		}
+		&:hover{
+			transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			-o-transform: scale(1.05);
+			z-index: 1;
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+			
+			.view-btn{
+				background: var(--primary);
+				//transition: background 0.8s ease;
+				transition-delay: 0s;
+				&:after,	
+				&:before{
+					@include translateZ;
+					opacity:1;
+				}
+			}
+		}
+	}
+	&.style-2{
+		@include transitionMedium;
+		overflow: hidden;
+		//box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+		//border-radius: $border-radius;
+		.ic-media{
+			img{
+				height:410px;
+			    object-fit: cover;
+				@include transitionMedium;
+				@include respond('tab-port'){
+					height:400px;
+				}
+			}
+		}
+		.swiper-slide-active{
+			
+		}
+		.ic-info{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 30px;
+			background: rgba(33,37,41,0.2);
+			display: flex;
+			flex-direction: column;
+		}
+		.sub-title{
+			font-family: var(--font-family-title);
+			bottom: 30px;
+			color: var(--primary);
+			font-size: 16px;
+			font-weight: 500;
+			@include transitionMedium;
+			margin-top:auto;
+		}
+		.title{
+			padding-right:20%;
+			margin: 0;
+			@include transitionMedium;
+			a{
+				color:#fff;	
+			}
+		}
+	}
+}
+.swiper-portfolio-2{
+	.swiper-slide{
+		@include transitionMedium;
+		margin-top:70px;
+		margin-bottom:70px;
+		@include respond('tab-port'){
+			margin-top:0;
+			margin-bottom:0;
+		}
+		&.swiper-slide-active{
+			margin-top:0;
+			margin-bottom:0;
+			.ic-media{
+				img{
+					height:550px;
+					object-fit: cover;
+					@include respond('tab-port'){
+						height:400px;
+					}
+				}
+			}
+		}
+	}
+	.swiper-pagination{
+		position:absolute;
+		right:30px;
+		bottom:0;
+		@include respond('tab-port'){
+			position: unset;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+			display: block;
+			margin-top:25px;
+		}
+		.swiper-pagination-bullet{
+			width: auto;
+			height: auto;
+			padding: 0;
+			background: transparent;
+			font-size: 24px;
+			margin: 0 15px;
+			font-weight: 600;
+			line-height: 1;
+			color: #fff;
+			@include transitionMedium;
+		
+			@include respond('tab-port'){
+				margin: 0 10px;
+			}
+			&.swiper-pagination-bullet-active{
+				font-size: 60px;
+				color: var(--primary);
+				@include respond('tab-port'){
+					font-size: 24px;
+				}
+			}
+			
+		}
+	}
+}

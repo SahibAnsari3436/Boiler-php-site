@@ -1,0 +1,137 @@
+$flaticon_industry-font: "flaticon_industry";
+
+@font-face {
+    font-family: $flaticon_industry-font;
+    src: url("./flaticon_industry.woff2?162d4314610feab55ec6f885e1183511") format("woff2"),
+url("./flaticon_industry.woff?162d4314610feab55ec6f885e1183511") format("woff"),
+url("./flaticon_industry.eot?162d4314610feab55ec6f885e1183511#iefix") format("embedded-opentype"),
+url("./flaticon_industry.ttf?162d4314610feab55ec6f885e1183511") format("truetype"),
+url("./flaticon_industry.svg?162d4314610feab55ec6f885e1183511#flaticon_industry") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_industry !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_industry-map: (
+    "factory": "\f101",
+    "infrastructure": "\f102",
+    "industrial": "\f103",
+    "manufacturing": "\f104",
+    "factory-1": "\f105",
+    "manufacture": "\f106",
+    "manufacturing-1": "\f107",
+    "factory-2": "\f108",
+    "maintenance": "\f109",
+    "technology": "\f10a",
+    "prototype": "\f10b",
+    "worker": "\f10c",
+    "oil-industry": "\f10d",
+    "electric-factory": "\f10e",
+    "steel": "\f10f",
+    "services": "\f110",
+    "technology-1": "\f111",
+    "assembly": "\f112",
+    "green-energy": "\f113",
+    "chip": "\f114",
+    "solar-energy": "\f115",
+    "battery-charge": "\f116",
+    "renewable-energy": "\f117",
+    "customer-service": "\f118",
+    "customer-support": "\f119",
+    "technical-support": "\f11a",
+    "right-quote": "\f11b",
+    "quote": "\f11c",
+);
+
+.flaticon-factory:before {
+    content: map-get($flaticon_industry-map, "factory");
+}
+.flaticon-infrastructure:before {
+    content: map-get($flaticon_industry-map, "infrastructure");
+}
+.flaticon-industrial:before {
+    content: map-get($flaticon_industry-map, "industrial");
+}
+.flaticon-manufacturing:before {
+    content: map-get($flaticon_industry-map, "manufacturing");
+}
+.flaticon-factory-1:before {
+    content: map-get($flaticon_industry-map, "factory-1");
+}
+.flaticon-manufacture:before {
+    content: map-get($flaticon_industry-map, "manufacture");
+}
+.flaticon-manufacturing-1:before {
+    content: map-get($flaticon_industry-map, "manufacturing-1");
+}
+.flaticon-factory-2:before {
+    content: map-get($flaticon_industry-map, "factory-2");
+}
+.flaticon-maintenance:before {
+    content: map-get($flaticon_industry-map, "maintenance");
+}
+.flaticon-technology:before {
+    content: map-get($flaticon_industry-map, "technology");
+}
+.flaticon-prototype:before {
+    content: map-get($flaticon_industry-map, "prototype");
+}
+.flaticon-worker:before {
+    content: map-get($flaticon_industry-map, "worker");
+}
+.flaticon-oil-industry:before {
+    content: map-get($flaticon_industry-map, "oil-industry");
+}
+.flaticon-electric-factory:before {
+    content: map-get($flaticon_industry-map, "electric-factory");
+}
+.flaticon-steel:before {
+    content: map-get($flaticon_industry-map, "steel");
+}
+.flaticon-services:before {
+    content: map-get($flaticon_industry-map, "services");
+}
+.flaticon-technology-1:before {
+    content: map-get($flaticon_industry-map, "technology-1");
+}
+.flaticon-assembly:before {
+    content: map-get($flaticon_industry-map, "assembly");
+}
+.flaticon-green-energy:before {
+    content: map-get($flaticon_industry-map, "green-energy");
+}
+.flaticon-chip:before {
+    content: map-get($flaticon_industry-map, "chip");
+}
+.flaticon-solar-energy:before {
+    content: map-get($flaticon_industry-map, "solar-energy");
+}
+.flaticon-battery-charge:before {
+    content: map-get($flaticon_industry-map, "battery-charge");
+}
+.flaticon-renewable-energy:before {
+    content: map-get($flaticon_industry-map, "renewable-energy");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon_industry-map, "customer-service");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon_industry-map, "customer-support");
+}
+.flaticon-technical-support:before {
+    content: map-get($flaticon_industry-map, "technical-support");
+}
+.flaticon-right-quote:before {
+    content: map-get($flaticon_industry-map, "right-quote");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_industry-map, "quote");
+}

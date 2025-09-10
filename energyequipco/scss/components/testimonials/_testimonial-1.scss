@@ -1,0 +1,370 @@
+.client-bg{
+	width:100%;	
+	animation: icMove1 5s linear infinite;
+}
+
+.client-area{
+	width:100%;
+	position:relative;
+	margin-top:30px;
+	margin-bottom:30px;
+	@include respond('phone'){
+		margin-bottom:0;
+	}
+	ul{
+		position:absolute;
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+		
+		
+		li{
+			position:absolute;
+			a{
+				width:80px;
+				height:80px;
+				display:inline-block;
+				overflow:hidden;
+				border-radius:100%;
+				box-shadow:0 5px 25px 0 rgba(0,0,0,0.15);
+				transform: scale(0.85);
+				-moz-transform: scale(0.85);
+				-webkit-transform: scale(0.85);
+				-ms-transform: scale(0.85);
+				-os-transform: scale(0.85);
+				@include transitionMedium;
+				@include respond('phone-land'){
+					width:40px;
+					height:40px;
+				}   
+				
+				img{
+					border-radius: 300px;
+					width:100%;
+					@include transitionMedium;
+				}
+				&.icclient1{
+					animation: icMove1 9s linear infinite;
+				}
+				&.icclient2{
+					animation: icMove1 8s linear infinite;
+				}
+				&.icclient3{
+					animation: icMove1 10s linear infinite;
+				}
+				&.icclient4{
+					animation: icMove1 7.5s linear infinite;
+				}
+				&.icclient5{
+					animation: icMove1 6s linear infinite;
+				}
+				&.icclient6{
+					animation: icMove1 7s linear infinite;
+				}
+			}
+			&:nth-child(1){
+				top: 35%;
+			}
+			&:nth-child(2){
+				left: 60%;
+				transform: scale(2);
+				-moz-transform: scale(2);
+				-webkit-transform: scale(2);
+				-ms-transform: scale(2);
+				-o-transform: scale(2);
+				top: 5%;
+			}
+			&:nth-child(3){
+				top: 85%;
+				left: 15%;
+				transform: scale(0.85);
+				-moz-transform: scale(0.85);
+				-webkit-transform: scale(0.85);
+				-ms-transform: scale(0.85);
+				-o-transform: scale(0.85);
+			}
+			&:nth-child(4){
+				left: 85%;
+				transform: scale(0.75);
+				-moz-transform: scale(0.75);
+				-webkit-transform: scale(0.75);
+				-ms-transform: scale(0.75);
+				-o-transform: scale(0.75);
+				top: 75%;
+			}
+			&:nth-child(5){
+				top: 60%;
+				left: 30%;
+				transform: scale(1.5);
+				-moz-transform: scale(1.5);
+				-ms-transform: scale(1.5);
+				-webkit-transform: scale(1.5);
+				-o-transform: scale(1.5);
+			}
+			&:nth-child(6){
+				left: 65%;
+				top: 55%;
+				transform: scale(1.3);
+				-moz-transform: scale(1.3);
+				-webkit-transform: scale(1.3);
+				-ms-transform: scale(1.3);
+				-o-transform: scale(1.3);
+			}
+			&.active{
+				img{
+					background: #fff;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+.testimonial-1{
+	.testimonial-info{
+		.testimonial-text{
+			font-size: 18px;
+			margin-bottom: 20px;
+		}	
+	}
+	.quote-icon{
+		transform: rotate(180deg);
+		display: inline-block;
+		font-size: 100px;
+		line-height: 1;
+		color: var(--primary);
+		margin-bottom: 20px;
+		
+		@include respond('phone-land'){
+			font-size: 70px;
+		}
+	}
+	.testimonial-detail{
+		.testimonial-name{
+			margin-bottom: 5px;
+		}
+		.testimonial-position{
+			color:var(--primary);
+			font-size:18px;
+		}
+	}
+}
+// Testimonial 1
+.testimonial-2 {
+	background-color: var(--primary);
+    padding: 50px;
+    position: relative;
+	@include transitionMedium;
+	color: #fff;
+	
+	.testimonial-text{
+		margin-bottom: 25px;
+		font-size: 22px;
+		@include respond('tab-port'){
+			font-size: 18px;
+		}
+	}
+	
+	.testimonial-pic{
+		border: 5px solid #fff;
+		border-radius: 50%;
+		overflow: hidden;
+		height: 90px;
+		width: 90px;
+		margin-right: 20px;
+			
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.testimonial-detail {
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+	.testimonial-name{
+		margin-bottom: 5px;
+		line-height: 1.3;
+		color: inherit;
+	}
+	&:after{
+		content: "\f10e";
+		font-family: "Font Awesome 5 Free";
+		position: absolute;
+		bottom: 30px;
+		right: 60px;
+		opacity: 0.4;
+		font-size: 70px;
+		font-weight: 700;
+	}
+	@include respond('phone-land'){
+		&:after{
+			font-size: 50px;
+		}
+	}
+	@include respond('phone'){
+		.testimonial-pic{
+			border: 3px solid #fff;
+			height: 70px;
+			width: 70px;
+			margin-right: 15px;
+		}
+		.testimonial-text{
+			margin-bottom: 20px;
+		}
+		&:after{
+			font-size: 40px;
+			bottom: 25px;
+			right: 30px;
+		}
+	}
+}
+
+.testimonial-3{
+	background:#fff;
+	padding:25px 30px;
+	@include transitionMedium;
+	
+	&:after {
+		content: "\f11b";
+		font-family: "flaticon_industry";
+		position: absolute;
+		top: 25px;
+		right: 30px;
+		font-size: 46px;
+		color: var(--primary);
+	}
+	.testimonial-detail{
+		display:flex;
+		align-items:center;
+		.testimonial-pic{
+			width:60px;
+			height:60px;
+			border:none;
+			background:none;
+			img{
+				border-radius:6px;
+			}
+		}
+		.clearfix{
+			margin-left:12px;
+			.testimonial-name{
+				font-weight: 600;
+				font-size: 17px;
+				margin-bottom:2px;
+			}
+			.testimonial-position{
+				font-weight: 500;
+				font-size: 14px;
+				color:var(--primary);
+			}
+		}
+	}
+	.testimonial-text{
+		p{
+		font-weight: 500;
+		padding-top: 10px;
+		font-size: 18px;
+
+		}
+	}
+	&:hover{
+		&:after {
+			color:var(--primary);	
+		}
+		background:var(--secondary);
+		.testimonial-detail{
+			.clearfix{
+				.testimonial-name{
+					color:#fff;
+				}
+				.testimonial-position{
+					color:#fff;
+				}
+			}
+		}
+		.testimonial-text{
+			p{
+			color:#fff;
+			}
+		}
+	}
+	
+}
+
+
+
+
+.test-area{
+	overflow: hidden;
+	.testi-inner{
+		position: relative;
+		&:after{
+			content: "";
+			width: 65vw;
+			float: right;
+			margin-right: -145px;
+			background-color: var(--primary);
+			position: absolute;
+			height: 100%;
+			top: 0;
+			right: 0;
+		}
+	}
+	.testimonial-2 {
+		padding: 50px 50px 50px 0;
+		@include respond('phone-land'){
+			padding: 30px;
+		}
+	}
+	.swiper-container{
+		margin-right: -145px;	
+	}
+	.media-full{
+		width: 50vw;
+		height: 100%;
+		img{
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	@include respond('tab-port'){
+		.testi-inner:after{
+			width: 75vw;
+		}
+	}
+	@include respond('phone-land'){
+		.testi-inner:after{
+			content: none;
+		}
+		.swiper-container{
+			margin-right: 0;
+		}
+		.testimonial-1 {
+			padding: 25px;
+		}
+		.media-full {
+			width: 100%;
+			height: auto;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
